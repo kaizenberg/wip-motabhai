@@ -11,4 +11,4 @@ function handlerRender(req, res) {
 
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.get('*', handlerRender);
-app.listen(3000);
+app.listen(process.env.PORT || 5000);
